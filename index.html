@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>HUNTLY LOC DATA</h1>
+<input type="file" id="file-input" accept=".xlsx">
+<button onclick=consoleLog()>Print to console</button><br></br>
+<button class="button1" onclick=plotBar2()>Bar Chart(by spill type)</button>
+<button onclick=plotBar()>Bar Chart(by Cause)</button>
+<button onclick=plotPieChart()> Pie Chart(by Cause)</button><br></br>
+<div id="graph"></div>
+
+ <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.plot.ly/plotly-2.17.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.6/xlsx.core.min.js"></script>
+</body>
+
+</html>
